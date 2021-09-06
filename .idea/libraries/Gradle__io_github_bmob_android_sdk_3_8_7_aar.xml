@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.bmob:android-sdk:3.8.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f2a675ecc12c22d144d6d95d7610a0e/jetified-android-sdk-3.8.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f2a675ecc12c22d144d6d95d7610a0e/jetified-android-sdk-3.8.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f2a675ecc12c22d144d6d95d7610a0e/jetified-android-sdk-3.8.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f2a675ecc12c22d144d6d95d7610a0e/jetified-android-sdk-3.8.7/jars/libs/BmobSDK_3.8.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
