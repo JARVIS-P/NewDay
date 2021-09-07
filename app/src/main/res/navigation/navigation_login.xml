@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_login"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.calendar.view.fragment.LoginFragment" >
+        <action
+            android:id="@+id/action_login_fragment_to_phone_login_fragment"
+            app:destination="@id/phone_login_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/phone_login_fragment"
+        android:name="com.example.calendar.view.fragment.PhoneLoginFragment">
+        <action
+            android:id="@+id/action_phone_login_fragment_to_phone_login_fragment_2"
+            app:destination="@id/phone_login_fragment_2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/phone_login_fragment_2"
+        android:name="com.example.calendar.view.fragment.PhoneLoginFragment2" >
+        <action
+            android:id="@+id/action_phone_login_fragment_2_to_find_password_fragment"
+            app:destination="@id/find_password_fragment"
+            app:popUpTo="@id/login_fragment"/>
+        <action
+            android:id="@+id/action_phone_login_fragment_2_to_new_user_fragment"
+            app:destination="@id/new_user_fragment"
+            app:popUpTo="@id/login_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/find_password_fragment"
+        android:name="com.example.calendar.view.fragment.FindFragment" >
+        <action
+            android:id="@+id/action_find_password_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/new_user_fragment"
+        android:name="com.example.calendar.view.fragment.NewUserFragment" />
+
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/today"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/today"
+        android:name="com.example.today.view.TodayFragment" />
+
+    <fragment
+        android:id="@+id/more"
+        android:name="com.example.more.view.fragment.MoreFragment" />
+
+    <fragment
+        android:id="@+id/plan"
+        android:name="com.example.plan.view.PlanFragment" />
+
+    <fragment
+        android:id="@+id/mine"
+        android:name="com.example.mine.view.fragment.MineRootFragment" />
+
+</navigation>

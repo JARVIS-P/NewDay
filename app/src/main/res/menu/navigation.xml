@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/today"
+        android:title="今日"
+        android:icon="@drawable/ic_today" />
+
+    <item
+        android:id="@+id/more"
+        android:title="更多"
+        android:icon="@drawable/ic_more" />
+
+    <item
+        android:id="@+id/plan"
+        android:title="计划"
+        android:icon="@drawable/ic_plan" />
+
+    <item
+        android:id="@+id/mine"
+        android:title="我的"
+        android:icon="@drawable/ic_mine" />
+</menu>
