@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:rotation="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#BFBCBC"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="400dp" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:rotation="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#D5D5D5"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="400dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:rotation="2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#EAE6E6"
+            app:cardCornerRadius="10dp"
+            android:layout_width="250dp"
+            android:layout_height="400dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="400dp" >
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#FFFCFC"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintVertical_bias="0.4"
+                    android:layout_gravity="center"
+                    android:src="@drawable/more_load"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加载中"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <com.example.more.db.TinderCardView
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/my_card_view_1"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="400dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con_layout_1"
+            android:background="@drawable/more_dufu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_1"
+                android:layout_width="125dp"
+                android:layout_height="160dp"
+                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                app:layout_constraintVertical_bias="0.7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每日一诗"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView_1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:alpha="0"
+            android:id="@+id/fragment_1"
+            android:visibility="gone"
+            android:background="@drawable/more_dufu_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/like_1"
+                android:visibility="gone"
+                android:layout_gravity="right|top"
+                android:src="@drawable/more_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView_1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </com.example.more.db.TinderCardView>
+
+    <com.example.more.db.TinderCardView
+        app:cardCornerRadius="10dp"
+        android:id="@+id/my_card_view_2"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="400dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="396dp"
+            android:background="@drawable/more_frame">
+
+            <ImageView
+                android:id="@+id/imageView_2"
+                android:layout_width="125dp"
+                android:layout_height="160dp"
+                android:src="@drawable/more_dog"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="舔狗日记"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView_2"
+                app:layout_constraintVertical_bias="0.7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:alpha="0"
+            android:id="@+id/fragment_2"
+            android:visibility="gone"
+            android:background="@drawable/more_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/like_2"
+                android:visibility="gone"
+                android:layout_gravity="right|top"
+                android:src="@drawable/more_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_2"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </com.example.more.db.TinderCardView>
+
+    <com.example.more.db.TinderCardView
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        android:id="@+id/my_card_view_3"
+        android:layout_gravity="center"
+        android:background="#FFFCFC"
+        android:layout_width="250dp"
+        android:layout_height="400dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con_layout_3"
+            android:background="@drawable/more_constellation_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_3"
+                android:layout_width="125dp"
+                android:layout_height="160dp"
+                android:src="@drawable/more_constellation"
+                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                app:layout_constraintVertical_bias="0.7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日运势"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView_3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:alpha="0"
+            android:id="@+id/fragment_3"
+            android:visibility="gone"
+            android:background="@drawable/more_constellation_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/like_3"
+                android:visibility="gone"
+                android:layout_gravity="right|top"
+                android:src="@drawable/more_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                 android:layout_marginTop="5dp"
+                android:id="@+id/textView_3"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </com.example.more.db.TinderCardView>
+
+    <com.example.more.db.TinderCardView
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        android:id="@+id/my_card_view_4"
+        android:layout_gravity="center"
+        android:background="#FFFCFC"
+        android:layout_width="250dp"
+        android:layout_height="400dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con_layout_4"
+            android:background="@drawable/more_love_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_4"
+                android:layout_width="125dp"
+                android:layout_height="160dp"
+                android:src="@drawable/more_love"
+                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                app:layout_constraintVertical_bias="0.7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日情话"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView_4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:alpha="0"
+            android:id="@+id/fragment_4"
+            android:visibility="gone"
+            android:background="@drawable/more_love_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/like_4"
+                android:visibility="gone"
+                android:layout_gravity="right|top"
+                android:src="@drawable/more_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView_4"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </com.example.more.db.TinderCardView>
+
+</FrameLayout>
