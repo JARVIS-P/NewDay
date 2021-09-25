@@ -1,0 +1,7 @@
+include ':more'
+include ':plan'
+include ':today'
+include ':mine'
+include ':Baselibs'
+include ':app'
+rootProject.name = "Calendar"
